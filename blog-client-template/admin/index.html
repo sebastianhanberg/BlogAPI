@@ -4,8 +4,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+		#table {
+		  font-family: Arial, Helvetica, sans-serif;
+		  border-collapse: collapse;
+		  margin-top: 10px;
+		}
+		
+		#table td, #table th {
+        
+            background-color: white;
+            
+		  border: 1px solid black;
+		  padding: 10px 50px; 
+		}
+	</style>
 </head>
 <body>
-    <script src="js/manage-posts.js"></script>
+    <div id="container">
+        <div class= "header">
+            <h1>ADMINPAGE</h1>
+            <a href="../index.html" class="admintag">Tillbaka till bloggen</a>
+        </div>
+        <nav>
+            <a href="./admin/create-post.html" class="createtag">Posta ett inlägg</a>
+        </nav>
+        
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                    <th>Update/Delete</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                
+                
+            </tbody>
+        </table>
+    
+            
+        </div>
+    <script src="../admin/js/manage-posts.js"></script>
 </body>
 </html>
