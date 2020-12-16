@@ -27,8 +27,12 @@ let tableBody = document.querySelector('#table tbody');
                 '<td>' + `<p class="date">${tweetDate.getFullYear()}-${tweetDate.getMonth()}-${tweetDate.getDate()}</p> </td>` +
                 
            
-            `<td><a href="admin/update-post.html?id=${tweet['_id']}">Update</a> | <a href="#" class="delete-tweet-btn" data-id="${tweet['_id']}">Delete</a> </td>`;
+                `<td><a href="../admin/update-post.html?id=${tweet['_id']}">Update</a> |  <a href="#" class="delete-tweet-btn" data-id="${tweet['_id']}">Delete</a> </td>`;
+
             
+               
+            
+
                 '</tr>';
         
         

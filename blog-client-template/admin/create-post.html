@@ -4,20 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="container">
         <h1>New Tweet</h1>
 
-        <form id="create-pun-form">
+        <form id="create-tweet-form">
+            <label for="">Title</label>
+            <input name="title" id="title-textarea" cols="5" rows="2"></input>
             <label for="">Content</label>
             <textarea name="content" id="content-textarea" cols="30" rows="10"></textarea>
+            <label for="">Author</label>
+            <input name="author" id="author-textarea" cols="5" rows="2"></input>
 
             <input type="submit" value="Create">
             <a href="../index.html">&#x2190; back</a>
         </form>
     </div>
-    <script src="./js/create-post.js"></script>
+    <script src="../admin/js/create-post.js"></script>
 </body>
 </html>

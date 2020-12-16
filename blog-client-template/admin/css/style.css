@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
 body {
-  background-color: wheat;
+  background-color: white;
 }
 
 .header {
@@ -65,10 +66,22 @@ form a {
 
 a {
   text-decoration: none;
-  color: darkblue;
+  color: black;
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgba(42, 42, 187, 0.692);
+  color: black;
 }
+
+a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.delete-tweet-btn {
+  color: red;
+}
+

@@ -3,13 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../admin/css/style.css ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 
     <style>
 		#table {
 		  font-family: Arial, Helvetica, sans-serif;
 		  border-collapse: collapse;
-		  margin-top: 10px;
+          margin-top: 10px;
+          margin: 20px auto; 
 		}
 		
 		#table td, #table th {
@@ -17,8 +20,9 @@
             background-color: white;
             
 		  border: 1px solid black;
-		  padding: 10px 50px; 
-		}
+		  padding: 20px 100px; 
+        }
+    
 	</style>
 </head>
 <body>
@@ -28,9 +32,10 @@
             <a href="../index.html" class="admintag">Tillbaka till bloggen</a>
         </div>
         <nav>
-            <a href="./admin/create-post.html" class="createtag">Posta ett inlägg</a>
+            <a href="../admin/create-post.html" class="createtag">Posta ett inlägg</a>
         </nav>
         
+        <div class="table-wrapper">
         <table id="table">
             <thead>
                 <tr>
@@ -49,7 +54,7 @@
                 
             </tbody>
         </table>
-    
+    </div>
             
         </div>
     <script src="../admin/js/manage-posts.js"></script>

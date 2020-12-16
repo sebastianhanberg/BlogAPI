@@ -1,7 +1,6 @@
 window.onload = function() {
     prefillForm();
     updateTweet();
-
 }
 
 async function prefillForm() {

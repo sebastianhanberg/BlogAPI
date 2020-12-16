@@ -4,23 +4,18 @@ form.addEventListener('submit', createTweet);
 async function createTweet(e) {
     e.preventDefault();
 
-    /**
-     * 1. Retrive the form data
-     * 2. Put the formdata in an object
-     * 3. JSON stringify the object, before sending the data with an API request
-     */
-
+   
     // this => is the form it self
-    let formData = new FormData(this);
+    
     // console.log(formatFormData(formData));
-
+    let formData = new FormData(this);
     // You can retrive the for data by selecting the components individually OR use new FormData() 
-    console.log(document.getElementById('content-textarea').value)
-    console.log(formData.get('content'))
+        
     
     let object = {
-        // content: document.getElementById('content-textarea').value
-        content: formData.get('content')
+        title: formData.get('title'),
+        content: formData.get('content'),
+        author: formData.get('author')
     }
     console.log(object);
     console.log(JSON.stringify(object));

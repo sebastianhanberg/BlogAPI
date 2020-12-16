@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
 }
 
 body {
-  background-color: wheat;
+  background-color: white;
 }
 
 .header {
@@ -50,7 +51,7 @@ nav .createtag {
   padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(170, 166, 166, 0.686);
   color: black;
   justify-content: space-around;
 
@@ -65,3 +66,23 @@ nav .createtag {
   padding: 5px;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.delete-tweet-btn {
+  color: red;
+}

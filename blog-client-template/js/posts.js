@@ -16,7 +16,7 @@ window.onload = function() {
             tweetHTML += `<li class="list-group-item">`
 
             tweetHTML += `<p>${tweet.title}`;
-            tweetHTML += `<p>${tweet.content}`;
+            tweetHTML += `<p>${tweet.content}<br><a href="./post.html" class="specificPost" data-id="${tweet['_id']}">Read More...</a> `;
            
             tweetHTML += `<p>${tweet.author}`;
             
@@ -24,12 +24,13 @@ window.onload = function() {
             let tweetDate = new Date(tweet.date);
             tweetHTML += `<br> <span class="date">- ${tweetDate.getFullYear()}-${tweetDate.getMonth()}-${tweetDate.getDate()}</span> </p>`;
             
-            tweetHTML += `<div>`;
-            tweetHTML += `<a href="admin/update-post.html?id=${tweet['_id']}">Update</a> | `;
-            tweetHTML += `<a href="#" class="delete-tweet-btn" data-id="${tweet['_id']}">Delete</a> `;
-            tweetHTML += `</div>`;
+            // tweetHTML += `<div>`;
+            // tweetHTML += `<a href="admin/update-post.html?id=${tweet['_id']}">Update</a> | `;
+            // tweetHTML += `<a href="#" class="delete-tweet-btn" data-id="${tweet['_id']}">Delete</a> `;
+            // tweetHTML += `</div>`;
 
             tweetHTML += `</li>`;
+            
 
            }
            document.getElementById('blogposts').innerHTML = tweetHTML; 
